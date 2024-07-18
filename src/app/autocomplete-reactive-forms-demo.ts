@@ -1,8 +1,7 @@
-import { Component, OnInit, ViewChild } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { ImportsModule } from "./imports";
 import { CountryService } from "@service/countryservice";
-import { FormControl, FormGroup, ReactiveFormsModule } from "@angular/forms";
-import { ContextMenu } from "primeng/contextmenu";
+import { FormControl, FormGroup } from "@angular/forms";
 import { MenuItem } from "primeng/api";
 interface AutoCompleteCompleteEvent {
   originalEvent: Event;
