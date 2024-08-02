@@ -8,7 +8,7 @@
         formControlName="selectedCountry"
         [suggestions]="filteredCountries"
         (completeMethod)="filterCountry($event)"
-        field="country"
+        field="getLabel()"
       />
     </div>
   </form>
@@ -48,8 +48,8 @@
     </li>
   </ul>
 
-  <p-contextMenu #cm [model]="items" (onHide)="onHide()">
-    <ng-template pTemplate="item" let-item>
+  <p-contextMenu [model]="items" (onHide)="onHide()">
+    <ng-template #cm pTemplate="item" let-item>
       <a pRipple class="flex align-items-center p-menuitem-link">
         <span class="item.icon"></span>
         <span class="ml-2"
